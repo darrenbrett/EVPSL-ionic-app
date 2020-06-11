@@ -49,7 +49,6 @@ export class PredictionsPage implements OnInit {
   }
 
   async getCurrentRound() {
-    console.log('getCurrentRound() firing...');
     this.currentRound = await this.predictionsService.getCurrentRound();
     console.log('this.currentRound: ', this.currentRound);
     this.games = this.currentRound.games;
